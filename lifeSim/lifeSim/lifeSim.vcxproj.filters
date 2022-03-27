@@ -26,5 +26,8 @@
     <ClInclude Include="busTravel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="showTheFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -18,7 +18,7 @@ std::vector<std::string> listOfAccountUsernames;
 std::vector<std::string> listOfAccountPasswords;
 std::vector<int> listOfDepositedValues;
 
-void showOptions();
+void showBankOptions();
 void processChosenOption(int a);
 void makeAccount();
 void login();
@@ -30,12 +30,11 @@ void playTheLottery();
 void indexOfWantedAccount(std::string a);
 void checkIfCorrectAccount(std::string a, std::string b);
 
-void showOptions()
+void showBankOptions()
 {
     std::cout << "1. New acoount\n";
     std::cout << "2. Login to account\n";
     std::cout << "Pick an option\n";
-    std::cout << shw;
     int chosenOption;
     std::cin >> chosenOption;
     processChosenOption(chosenOption);
@@ -53,7 +52,7 @@ void processChosenOption(int a)
         break;
     default:
         std::cout << "Please pick a valid option\n";
-        showOptions();
+        showBankOptions();
     }
 }
 
@@ -72,7 +71,7 @@ void makeAccount()
     listOfDepositedValues.push_back(0);
 
     std::cout << "New account created\n";
-    showOptions();
+    showBankOptions();
 }
 
 void login() {

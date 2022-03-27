@@ -5,7 +5,7 @@ bool firstRide = true;
 std::string lastLocation = "sentosa";
 int chosenOption;
 
-void showOptions();
+void showBusOptions();
 void processChosenOption();
 void goingToSentosa();
 void goingToBukit();
@@ -26,7 +26,7 @@ BusMaker Bus1;
 BusMaker Bus2;
 BusMaker Bus3;
 
-void showOptions() {
+void showBusOptions() {
 	std::cout << "Where would you like to go?\n";
 	std::cout << "1. Sentosa\n";
 	std::cout << "2. Bukit Timah\n";
@@ -62,11 +62,11 @@ void goingToSentosa() {
 	if (Bus1.freeSeats != 0 && Bus1.inService) {
 		lastLocation = "Sentosa\n";
 		std::cout << "You rode the bus\n";
-		showOptions();
+		showBusOptions();
 	}
 	else {
 		std::cout << "The bus is either full or broken\n";
-		showOptions();
+		showBusOptions();
 	}
 }
 
